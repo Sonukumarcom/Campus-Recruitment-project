@@ -1,0 +1,66 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #858796;
+    --success-color: #1cc88a;
+    --dark-bg: #f8f9fc;
+    --sidebar-bg: #4e73df;
+    --card-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    overflow-x: hidden;
+}
+
+/* --- Card Styling --- */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease-in-out;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Upar uthne wala effect */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
+}
+
+/* --- Dashboard Stats Cards --- */
+.stats-card {
+    border-left: 5px solid;
+}
+.border-left-primary { border-left-color: var(--primary-color) !important; }
+.border-left-success { border-left-color: var(--success-color) !important; }
+.border-left-warning { border-left-color: #f6c23e !important; }
+
+/* --- Buttons --- */
+.btn {
+    border-radius: 50px; /* Pill shape buttons */
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-primary {
+    background: linear-gradient(45deg, #4e73df, #224abe);
+    border: none;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* --- Table Styling --- */
+.table thead th {
+    background-color: #4e73df;
+    color: white;
+    border: none;
+}
+.table-hover tbody tr:hover {
+    background-color: rgba(78, 115, 223, 0.1);
+    transform: scale(1.01);
+    transition: 0.2s;
+}
